@@ -73,6 +73,26 @@
 
   .benefits {
 
+    &.grid {
+      .row {
+        height: 200px;
+        border-top: 1px solid black;
+
+        &:not(:last-child) {
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+        }
+
+        .col {
+          height: 100%;
+          &:not(:last-child) {
+            border-right: 1px solid black;
+          }
+        }
+      }
+
+    }
+
     .row {
       // http://stackoverflow.com/a/25517025/173957
       display: flex;

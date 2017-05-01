@@ -91,17 +91,33 @@ class App extends Component {
             </div>
           </div>
         </div>
-        <div className="content-section benefits">
+        <div className="content-section benefits grid">
           <div className="container">
             <div className="row">
-              <div className="col-sm-12">
-                <h3>Create React App</h3>
-                <p>This is built with <a href="https://github.com/facebookincubator/create-react-app">create react
-                  app</a>.
-                </p>
+              <div className="col col-sm-8">
               </div>
-              <div className="col-sm-11 col-sm-offset-1">
+              <div className="col col-sm-8">
               </div>
+              <div className="col col-sm-8">
+              </div>
+            </div>
+            <div className="row">
+              <div className="col col-sm-8">
+              </div>
+              <div className="col col-sm-8">
+              </div>
+              <div className="col col-sm-8">
+              </div>
+            </div>
+            <div className="row">
+              <div className="col col-sm-8">
+              </div>
+              <div className="col col-sm-8">
+              </div>
+              <div className="col col-sm-8">
+              </div>
+            </div>
+            <div className="row">
             </div>
           </div>
         </div>
