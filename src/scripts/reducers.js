@@ -1,5 +1,5 @@
 const appDefaultState = {
-  appName: 'React App Hackathon'
+  appName: 'Loom'
 };
 
 export function appReducer(state = appDefaultState, action = null) {

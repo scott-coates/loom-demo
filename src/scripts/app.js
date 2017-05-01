@@ -49,6 +49,22 @@ class App extends Component {
     console.log(values);
   }
 
+  handleChange(event) {
+    // TODO - fill in
+    const setState = this.setState.bind(this);
+    this.setState({input: event.target.value});
+    fetch('http://0.0.0.0:3000/?search_text=' + event.target.value)
+      .then(function (response) {
+        return response.json()
+      }).then(function (json) {
+      console.log("json", json); // todo console.log statement
+      setState({results: json});
+    }).catch(function (ex) {
+      console.log('parsing failed', ex)
+    });
+  }
+
+
   render() {
     const { handleSubmit } = this.props;
 
@@ -62,7 +78,7 @@ class App extends Component {
             <div className="container">
               <div className="row">
                 <div className="col-md-24">
-                  <h1 className="blurb">Hello, World!</h1>
+                  <h1 className="blurb">Hello, {this.props.app.appName}!</h1>
                   <h2 className="blurb">Get your hackath-on!
                   </h2>
                 </div>
